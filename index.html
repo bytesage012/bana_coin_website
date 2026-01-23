@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$BANA | The Premium Meme Asset</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="The official ultra-premium home of $BANA coin on Solana. Inspired by BNB, fueled by community. Join the yellow revolution." />
+    <meta name="keywords" content="$BANA, Meme Coin, Solana, Crypto, BNB, Altcoin, Cryptocurrency, Community" />
+    <meta name="author" content="$BANA Community" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://banatoken.com/" />
+    <meta property="og:title" content="$BANA | The Premium Meme Asset" />
+    <meta property="og:description" content="The official ultra-premium home of $BANA coin on Solana. Inspired by BNB, fueled by community." />
+    <meta property="og:image" content="https://picsum.photos/800/800?random=1" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://banatoken.com/" />
+    <meta property="twitter:title" content="$BANA | The Premium Meme Asset" />
+    <meta property="twitter:description" content="The official ultra-premium home of $BANA coin on Solana. Inspired by BNB, fueled by community." />
+    <meta property="twitter:image" content="https://picsum.photos/800/800?random=1" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bana: {
+                yellow: '#F3BA2F', // BNB-ish Yellow
+                dark: '#0B0E11',   // Binance Dark
+                accent: '#9945FF', // Solana Purple
+              }
+            },
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              display: ['Bangers', 'cursive'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              'pulse-glow': {
+                '0%, 100%': { opacity: 0.6, transform: 'scale(1)' },
+                '50%': { opacity: 1, transform: 'scale(1.05)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0B0E11;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #F3BA2F;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D4A017;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.91.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-bana-dark text-white antialiased overflow-x-hidden selection:bg-bana-yellow selection:text-bana-dark">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
